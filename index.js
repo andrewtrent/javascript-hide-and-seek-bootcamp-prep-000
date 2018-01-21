@@ -20,7 +20,6 @@ function deepestChild(){
   var gnc = [gn]
 for(var i = 0; i < 10; i++){
   if(gnc[0].children === true){
-
     gnc.push(gnc[0].children[0])
     gnc.shift()
   } else{
