@@ -23,8 +23,7 @@ for(var i = 0; i < 10; i++){
     gnc.push(gnc[0].children[0])
     gnc.shift()
   } else{
-  gnc[0];
-  break;
+  return gnc[0];
   }
 }
 }
