@@ -17,11 +17,14 @@ return listQueue
 
 function deepestChild(){
   var gn = document.querySelector('div + div');
+  var gnc = [gn]
 for(var i = 0; i < 10; i++){
-  if(gn.children === true){
-    gn = gn.children[0]
+  if(gnc[0].children === true){
+
+    gnc.push(gnc[0].children[0])
+    gnc.shift()
   } else{
-  return gn
+  return gnc[0]
   }
 }
 }
