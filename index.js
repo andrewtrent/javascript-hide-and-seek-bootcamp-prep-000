@@ -19,9 +19,8 @@ function deepestChild(){
   var gn = document.querySelector('div + div');
   var gnc = [gn];
   for(var i = 0; i < 10; i++){
-    if(gnc[0].children === true){
-      gnc.push(gnc[0].children[0])
-      gnc.shift()
+    if(gn.children.children){
+      gn = gn.children[0]
     } else{
     return gnc[0];
     }
