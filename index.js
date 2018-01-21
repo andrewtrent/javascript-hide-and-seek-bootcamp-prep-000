@@ -22,7 +22,7 @@ function deepestChild(){
     if(gn.children.children){
       gn = gn.children[0]
     } else{
-    return gnc[0];
+    return gn;
     }
   }
 }
