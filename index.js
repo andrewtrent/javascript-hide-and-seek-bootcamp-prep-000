@@ -16,9 +16,10 @@ return listQueue
 }
 
 function deepestChild(){
-  var gn = document.querySelector('div + div');
-    for(var i = 0; i<4; i++){
-		gn = gn.children[0]
-		}
-  return gn
+  var gn = document.querySelectorAll('div + div div')
+    for(var i = 0;i < gn.length; i++){
+		  if(gn[i].children.length===0){
+			  return gn[i]
+      }
+    }
 }
