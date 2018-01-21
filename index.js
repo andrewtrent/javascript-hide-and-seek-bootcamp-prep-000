@@ -21,8 +21,8 @@ for(var i = 0; i === 0;){
   if(gn.children === true){
     gn = gn.children[0]
   } else{
-    gn;
     i = 1
- }
+  }
+  return gn
 }
 }
